@@ -1,0 +1,170 @@
+.currency-converter-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+    color: #333;
+}
+
+.converter-title {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Espace entre les éléments */
+    margin-bottom: 25px;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur petits écrans */
+}
+
+.amount-input,
+.currency-select {
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1.1em;
+    color: #555;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.amount-input:focus,
+.currency-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.select-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espace entre le drapeau et le select */
+    position: relative;
+}
+
+.flag-icon {
+    width: 28px; /* Taille des drapeaux */
+    height: 20px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    object-fit: cover; /* S'assure que l'image couvre bien la zone */
+}
+
+.separator {
+    font-size: 1.8em;
+    color: #6c757d;
+}
+
+.conversion-result {
+    font-size: 1.6em;
+    color: #34495e;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.converted-value {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1.1em; /* Un peu plus grand pour le résultat */
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    margin: 40px 0;
+}
+
+.other-rates-section {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.section-title {
+    color: #34495e;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.rates-list {
+    list-style: none;
+    padding: 0;
+    display: grid; /* Utilise CSS Grid pour un affichage en colonnes */
+    grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+    gap: 15px; /* Espacement entre les éléments de la grille */
+}
+
+.rate-item {
+    background-color: #ffffff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1em;
+    color: #555;
+    transition: transform 0.2s ease-in-out;
+}
+
+.rate-item:hover {
+    transform: translateY(-3px); /* Petit effet au survol */
+}
+
+.rate-item strong {
+    color: #007bff;
+}
+
+/* Styles pour les écrans plus petits */
+@media (max-width: 768px) {
+    .currency-converter-container {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+    .input-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .rates-list {
+        grid-template-columns: 1fr; /* Une seule colonne sur petits écrans */
+    }
+}
+.select-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f4f4f4;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.flag-icon-small {
+  width: 30px;
+  height: auto;
+  border-radius: 2px;
+}
+
+.flag-icon-mini {
+  width: 20px;
+  height: 15px;
+  margin-right: 10px;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+
+.rate-item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 8px;
+}
